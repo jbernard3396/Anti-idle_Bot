@@ -1,0 +1,58 @@
+ToDo List:
+
+1. Create file system which uses a standard key system to log data from bots and what not
+	-function to write data to key
+	-function to get information from key
+	-function to switch key to new key
+	-function to timeStamp information 
+	-function to clear file
+	
+2. Auto setup
+	-Make sure that screen is in right place by checking 4 pixels on each corner?
+	-complete dailies once a day
+	
+3. Get data on things.  Explore using built in light system, and explore reding number
+	-perfect clicks button data and clicks per minute data.  Look into checking color of click and reading purple buttons number
+	-Battle Data, what places we can go safely, whats been unlocked, item stats?.  Gold, exp, crystals, etc data would be baller
+	-arcade data, score or percent gold
+	-Fishing data, caught average, combos and what not 
+	-Event data, number of tokens, rewards, etc. 
+	-Ants data, how many	
+	-Lol market
+	
+4. Get button clicker to good place
+	-90% perfect with at least 300 clicks a minute
+	-not missing at slow times because of long micro events
+	-only upgrading the grandpas once per time coming to page
+	-test functions that warn if not working
+
+5. Get battle to good place
+	-keeping track of and exploring all useful areas
+	-spending upgrades
+	-skill points
+	-switching items?
+
+6. Get Arcade to good place
+	- deactivate avoid, 
+	- turn in for prize once every game has gotten gold score
+	- don't play games that have gold
+	- don't go to arcade after turning in
+	- test to make sure never navigate to arcade screen while it has no tokens and or after it has turned in prize.  Test to make sure games aren't played after gold.
+	
+7. Get fishing to good place (probably trash current code)
+	- catching fish consistently
+	- keeping energy up 
+	- selling and using caught items effectively
+	- navigating through milestone screens effectively
+	- test to make sure that energy is up, that high average combos are kept, and that we don't navigate to fishing if these cant happen that day
+
+8. Get Housekeeping to good point 
+	- housekeep only if certain amount of time has passed (consider using light timer)
+	- Major house keep on timer as well?
+	
+9. Get lolMarket to good point
+	- checking averages, buying low and selling high
+	- only buy when you have nothing bought, only buy all and sell all
+	
+	
+	
