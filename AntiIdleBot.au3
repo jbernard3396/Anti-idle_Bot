@@ -81,14 +81,14 @@ Func MainLoop()
 	  $numIters = Random(500,500, 1)
 	  $option = Random(0 ,8, 1)
 	  if ($option = 0) Then
-		 pressButton($numIters)
-	  ElseIf($option <= 5 ) Then
-;~ 		 Battle($numIters)
-	  ElseIf($option <= 6) Then
+;~ 		 pressButton($numIters)
+	  ElseIf($option <= 1 ) Then
+		 Battle($numIters)
+	  ElseIf($option <= 2) Then
 ;~ 		 fishing($numIters)
-	  ElseIf($option <= 7) Then
+	  ElseIf($option <= 3) Then
 ;~ 		 Arcade(True)
-	  ElseIf($option <= 8) Then
+	  ElseIf($option <= 4) Then
 ;~ 		 stadium($numIters)
 	  EndIf
 	  $exitInfo = "fishing: " & $globalFishingCounter & "  " & "Battle: " & $globalBatlleCounter & "  " & "Button: " & $globalButtonCounter & " " & "WAG: " & $globalWAGCounter & " Bets: " & $globalBetCounter
