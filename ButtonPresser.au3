@@ -52,10 +52,11 @@ func setup()
 EndFunc
 
 func pressButton($numTimesToClick)
-
    navigateToButtonRoom()
-   $buttonColor = identifyButtonColor()
    setup()
+   upgradeButton()
+   $buttonColor = identifyButtonColor()
+
 
    for $i = 0 To ($numTimesToClick)-1
 	  $globalButtonCounter += 1
@@ -72,7 +73,6 @@ func pressButton($numTimesToClick)
 		 $bestClickPixel = findBestClick($buttonColor)
 		 if (isArray($bestClickPixel)) Then
 			MouseClick("left",$bestClickPixel[0], $bestClickPixel[1],1,1)
-;~ 			isClickPerfect($bestClickPixel)
 		 EndIf
 	  EndIf
 	  $nearBreak = pixelArraySearch($nearBreakArray, $nearBreakColor)
@@ -89,19 +89,6 @@ func pressButton($numTimesToClick)
    $numMinutes = getMinutesFromTimerStart($testTimer)
    $buttonsPerMinute = $globalButtonCounter/$numMinutes
 EndFunc
-
-func isClickPerfect($clickPosition) ;;under advisement  Takes too long and doesnt always work?
-	  sleep(100)
-	  local $lastClickColor = PixelGetColor($clickPosition[0]+10, $clickPosition[1]-20)
-	  if ($lastClickColor == 26059) Then
-		 print("Perfect")
-	  EndIf
-	  if ($lastClickColor == 16758528 Or $lastClickColor == 16750848) Then
-		 print("excellent")
-	  EndIf
-;~ 	  print($lastClickColor, 100)
-EndFunc
-
 
 func identifyButtonColor()
    Local $nearBreakArray[4]

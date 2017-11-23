@@ -84,10 +84,10 @@ Func MainLoop()
 		 pressButton($numIters)
 	  ElseIf($option <= 5 ) Then
 ;~ 		 Battle($numIters)
-	  ElseIf($option <= 5) Then
+	  ElseIf($option <= 6) Then
 ;~ 		 fishing($numIters)
-	  ElseIf($option <= 5) Then
-		 ;Arcade(True)
+	  ElseIf($option <= 7) Then
+;~ 		 Arcade(True)
 	  ElseIf($option <= 8) Then
 ;~ 		 stadium($numIters)
 	  EndIf
